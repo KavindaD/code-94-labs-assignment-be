@@ -10,7 +10,8 @@ MongoClient.connect(
     process.env.PRODUCTS_DB_URI,
     {
         maxPoolSize: 500,
-        wtimeoutMS: 2500
+        wtimeoutMS: 2500,
+        useNewUrlParser: true
     }
 )
 .catch(err => {
